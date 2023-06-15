@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    nav > a {
+        @apply py-2 px-4 rounded-full 
+    }
+}
+
+@layer base {
+    html {
+        @apply font-poppins
+    }
+
+    button {
+        @apply py-2 px-4 rounded-full
+    }
+
+    .primary-btn {
+        @apply bg-amber-800 text-amber-50
+    }
+
+    .secondary-btn {
+        @apply bg-white text-amber-800 border border-amber-600 hover:border-amber-800
+    }
+}
